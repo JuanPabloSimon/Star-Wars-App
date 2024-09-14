@@ -1,14 +1,16 @@
-import { Text, Image, Card, CardBody, CardFooter } from "@chakra-ui/react";
-
+import { Text, Image, Card, CardBody } from "@chakra-ui/react";
+import "./characterCards.css";
 const CharacterCard = ({ character }) => {
   return (
     <Card
+      justifySelf="center"
+      className="listCard"
       variant="filled"
       maxW="200px"
-      borderWidth="1px"
       borderRadius="lg"
       mb={4}
-      backgroundColor="rgb(255,255,255,0.8)"
+      backgroundColor="rgb(0,0,0 ,0.8)"
+      color="white"
     >
       <CardBody textAlign="center" fontWeight="bold">
         <Image
@@ -18,9 +20,6 @@ const CharacterCard = ({ character }) => {
           alt={character.name}
         />
         <Text fontSize="xl">{character.name}</Text>
-        <Text>Gender: {character.gender}</Text>
-        <Text>Height: {character.height} </Text>
-        <Text>Mass: {character.mass}</Text>
       </CardBody>
     </Card>
   );

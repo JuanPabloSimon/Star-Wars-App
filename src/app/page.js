@@ -1,34 +1,23 @@
 "use client";
 import { CharacterProvider } from "./context/CharacterContext";
-import SearchBar from "./components/SearchBar";
-import CharacterList from "./components/CharacterList";
-
-import { ChakraProvider, Container, Heading, Text } from "@chakra-ui/react";
-import CurrentCharacter from "./components/CurrentCharacter";
-import Head from "next/head";
+import SearchBar from "./components/searchBar/SearchBar";
+import CharacterList from "./components/characterList/CharacterList";
+import CurrentCharacter from "./components/currentCharacter/CurrentCharacter";
+import logo from "./Star_Wars_Logo.png";
+import { ChakraProvider, Container, Heading, Image } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <ChakraProvider>
       <CharacterProvider>
         <Container maxW="100vw" height="100vh" className="bg1" pt={10} mt={0}>
-          <Heading
-            as="h1"
-            size="xl"
-            textAlign="center"
-            mt="0 !important"
-            color="white"
-          >
-            StarWars Character Search
-          </Heading>
           <SearchBar />
           <CurrentCharacter />
         </Container>
         <Container
           maxW="100vw"
-          height="100vh"
+          minH="100vh"
           className="bg2"
-          overflow="hidden"
           display="flex"
           flexDir="column"
           alignItems="center"

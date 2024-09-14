@@ -8,10 +8,11 @@ import {
   Stack,
   Divider,
 } from "@chakra-ui/react";
-
+import "./characterCards.css";
 const CharacterCurrentCard = ({ character }) => {
   return (
     <Card
+      justifySelf="center"
       boxShadow="dark-lg"
       rounded="md"
       direction={{ base: "column", sm: "row" }}
@@ -22,12 +23,12 @@ const CharacterCurrentCard = ({ character }) => {
       mb={4}
       color="white"
       backgroundColor="rgb(0,0,0,0.6)"
-      //   background="linear-gradient(48deg, rgba(0,0,0,0.8) 19%, rgba(41,19,84,0.8) 74%);"
     >
       <CardBody display="flex" textAlign="center" fontWeight="bold">
         <Image
           className="cardImage"
           maxH="350px"
+          maxW="260px"
           src={`https://starwars-visualguide.com/assets/img/characters/${
             character.url.split("/")[5]
           }.jpg`}

@@ -3,7 +3,7 @@
 
 
 .bg1 {
-  background-image: url("./assets/images/fondo_Star_Wars.jpg");
+  background-image: url("./assets/images/bg1.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -16,36 +16,3 @@
   background-repeat: no-repeat;
 }
 
-
-body {
-  background: none !important; 
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.characterList {
-    margin: 0;
-  padding: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
-  gap: 20px;
-}
-.cardImage {
-  transition: all ease-in-out 0.5s;
-}
-.cardText {
-  transition: all ease-in-out 0.5s;
-}
-.cardText:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-  scale: 1.05;
-}
-.cardImage:hover {
-  scale: 1.05;
-}

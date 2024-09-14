@@ -1,0 +1,28 @@
+.cardImage {
+    transition: all ease-in-out 0.5s;
+}
+
+  
+.cardText {
+    transition: all ease-in-out 0.5s;
+}
+
+.cardText:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    scale: 1.05;
+  }
+.cardImage:hover {
+    scale: 1.05;
+}
+
+.listCard {
+    box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
+-webkit-box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
+-moz-box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+
+.listCard:hover {
+    transform: rotate(360deg) scale(1.2);
+}

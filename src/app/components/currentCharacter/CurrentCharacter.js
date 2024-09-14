@@ -1,6 +1,6 @@
 import { Box, Text, Spinner } from "@chakra-ui/react";
-import { CharacterContext } from "../context/CharacterContext";
-import CharacterCurrentCard from "./CharacterCurrentCard";
+import { CharacterContext } from "../../context/CharacterContext";
+import CharacterCurrentCard from "../characterCards/CharacterCurrentCard";
 import { useContext } from "react";
 
 const CurrentCharacter = () => {
