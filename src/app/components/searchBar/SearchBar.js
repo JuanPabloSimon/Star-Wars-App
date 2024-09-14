@@ -14,7 +14,6 @@ const SearchBar = () => {
       const response = await axios.get(
         `https://swapi.dev/api/people/?search=${input}`
       );
-
       const character = response.data.results[0];
       const planet = await axios.get(character.homeworld);
       character.homeworld = planet.data.name;

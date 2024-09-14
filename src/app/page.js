@@ -1,10 +1,9 @@
 "use client";
 import { CharacterProvider } from "./context/CharacterContext";
 import SearchBar from "./components/searchBar/SearchBar";
-import CharacterList from "./components/characterList/CharacterList";
 import CurrentCharacter from "./components/currentCharacter/CurrentCharacter";
-import logo from "./Star_Wars_Logo.png";
 import { ChakraProvider, Container, Heading, Image } from "@chakra-ui/react";
+import CharacterListContainer from "./components/characterListContainer/CharacterListContainer";
 
 export default function Home() {
   return (
@@ -33,7 +32,7 @@ export default function Home() {
             {" "}
             History{" "}
           </Heading>
-          <CharacterList totalPages={10} />
+          <CharacterListContainer />
         </Container>
       </CharacterProvider>
     </ChakraProvider>
