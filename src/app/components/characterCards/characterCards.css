@@ -19,10 +19,13 @@
     box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
 -webkit-box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
 -moz-box-shadow: -0px -0px 10px 1px rgba(255,255,255,0.75) !important;
-    /* transition: all ease 0.8s; */
-    /* cursor: pointer; */
+    transition: all ease 0.2s; 
+    cursor: pointer;
 }
 
-/* .listCard:hover {
-    transform: rotate(360deg) scale(1.2);
-} */
+.listCard:hover {
+    transform: scale(1.05);
+    box-shadow: -0px -0px 10px 5px rgba(255,255,255,0.75) !important;
+    -webkit-box-shadow: -0px -0px 10px 5px rgba(255,255,255,0.75) !important;
+    -moz-box-shadow: -0px -0px 10px 5px rgba(255,255,255,0.75) !important;
+}

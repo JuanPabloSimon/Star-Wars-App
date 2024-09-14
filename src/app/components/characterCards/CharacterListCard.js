@@ -1,10 +1,20 @@
 import { Text, Image, Card, CardBody } from "@chakra-ui/react";
 import "./characterCards.css";
+import { useContext } from "react";
+import { CharacterContext } from "@/app/context/CharacterContext";
 
 // Componente "Card" que renderiza el personaje individualmente sin información, para ser renderizado en la lista del historial
 const CharacterCard = ({ character }) => {
+  const { addCharacter } = useContext(CharacterContext);
+
+  // funcion para poder seleccionar personajes desde el historial
+  const handleClick = (element) => {
+    addCharacter(element);
+  };
+
   return (
     <Card
+      onClick={() => handleClick(character)}
       justifySelf="center"
       className="listCard"
       variant="filled"

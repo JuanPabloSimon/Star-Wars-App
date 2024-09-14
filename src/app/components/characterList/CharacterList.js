@@ -50,7 +50,7 @@ const CharacterList = () => {
         alignItems="center"
       >
         <Button variant="outline" color="red" onClick={() => handlePrev()}>
-          Anterior
+          Recent
         </Button>
         <UnorderedList className="characterList" textAlign="center">
           {
@@ -65,7 +65,7 @@ const CharacterList = () => {
           }
         </UnorderedList>
         <Button variant="outline" color="red" onClick={() => handleNext()}>
-          Siguiente
+          Previows
         </Button>
       </Stack>
     </Box>
