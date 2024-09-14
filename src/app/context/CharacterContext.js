@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 export const CharacterContext = createContext();
 
+// Conexto de la aplicación
 export const CharacterProvider = ({ children }) => {
   const [characters, setCharacters] = useState([
     {
@@ -187,6 +188,7 @@ export const CharacterProvider = ({ children }) => {
     setCharacters((prev) => [character, ...prev]); // si no existe lo agrega al principio para que sea el current (como un historial)
   };
 
+  // función para filtrar el histial basado en la elección de género
   const filterCharacters = () => {
     switch (filter) {
       case "male":

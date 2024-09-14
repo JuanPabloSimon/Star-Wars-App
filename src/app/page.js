@@ -1,9 +1,10 @@
 "use client";
 import { CharacterProvider } from "./context/CharacterContext";
 import SearchBar from "./components/searchBar/SearchBar";
-import CurrentCharacter from "./components/currentCharacter/CurrentCharacter";
-import { ChakraProvider, Container, Heading, Image } from "@chakra-ui/react";
-import CharacterListContainer from "./components/characterListContainer/CharacterListContainer";
+import CurrentCharacter from "./components/currentCharacter/CurrentCharacterContainer";
+import { ChakraProvider, Container, Heading } from "@chakra-ui/react";
+import CharacterList from "./components/characterList/CharacterList";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -24,15 +25,14 @@ export default function Home() {
         >
           <Heading
             as="h1"
-            color="black"
-            bg="rgb(255,255,255,0.8)"
-            p={2}
+            color="white"
+            bg="rgb(0,0,0,0.9)"
+            p="5px 2em 5px 2em"
             borderRadius={10}
           >
-            {" "}
-            History{" "}
+            History
           </Heading>
-          <CharacterListContainer />
+          <CharacterList />
         </Container>
       </CharacterProvider>
     </ChakraProvider>

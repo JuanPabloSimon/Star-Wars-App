@@ -1,8 +1,10 @@
 import { Stack, Text, Select } from "@chakra-ui/react";
 import { CharacterContext } from "../../context/CharacterContext";
 import { useContext } from "react";
+
+// Input para filtrar personajes por filtro
 const FilterInput = () => {
-  const { setFilter } = useContext(CharacterContext);
+  const { setFilter } = useContext(CharacterContext); // funcion para cambiar el filtro desde el contexto de la app
   return (
     <Stack display="flex" flexDir="row" mb={5}>
       <Text

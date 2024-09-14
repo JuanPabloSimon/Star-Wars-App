@@ -9,6 +9,8 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import "./characterCards.css";
+
+// Componente "Card" que renderiza el personaje individualmente con su información luego del fetch
 const CharacterCurrentCard = ({ character }) => {
   return (
     <Card
