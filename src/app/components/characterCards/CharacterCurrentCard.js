@@ -51,7 +51,7 @@ const CharacterCurrentCard = ({ character }) => {
               className="cardText"
               fontSize="xl"
             >
-              {character.name}
+              Name: {character.name}
             </Text>
             <Divider />
           </Stack>

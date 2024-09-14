@@ -9,7 +9,8 @@ const SearchBar = () => {
   const [input, setInput] = useState(""); // manejo del estado del texto ingresado por el usuario
 
   // funcion llamada a la api
-  const searchCharacter = async () => {
+  const searchCharacter = async (e) => {
+    e.preventDefault();
     setLoading(true); // mostrar algo mientras los datos son leídos
     setError(null);
     try {
@@ -29,7 +30,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form className="form">
+    <form onSubmit={(e) => searchCharacter(e)} className="form">
       <Input
         boxShadow="dark-lg"
         p="6"

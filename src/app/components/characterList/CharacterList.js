@@ -60,7 +60,15 @@ const CharacterList = () => {
                 <CharacterCard className="cards" key={index} character={el} />
               ))
             ) : (
-              <Text color="red.500">No Characters to Display</Text>
+              <Text
+                bg="rgb(0,0,0,0.5)"
+                borderRadius={10}
+                color="red.500"
+                fontSize="3em"
+                fontWeight="bolder"
+              >
+                No Characters to Display
+              </Text>
             )
           }
         </UnorderedList>
