@@ -1,9 +1,21 @@
 :root {
-  background-image: url("./assets/img/venti-views-35uZM_4wjYg-unsplash.jpg");
+}
+
+
+.bg1 {
+  background-image: url("./assets/images/fondo_Star_Wars.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.bg2 {  
+  background-image: url("./assets/images/fondo_Star_Wars_2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 
 body {
   background: none !important; 
@@ -17,10 +29,23 @@ body {
 }
 
 .characterList {
-  margin: 0;
+    margin: 0;
   padding: 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
   gap: 20px;
+}
+.cardImage {
+  transition: all ease-in-out 0.5s;
+}
+.cardText {
+  transition: all ease-in-out 0.5s;
+}
+.cardText:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  scale: 1.05;
+}
+.cardImage:hover {
+  scale: 1.05;
 }

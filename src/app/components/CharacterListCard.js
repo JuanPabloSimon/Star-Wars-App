@@ -1,4 +1,4 @@
-import { Box, Text, Image, Card, CardBody, CardFooter } from "@chakra-ui/react";
+import { Text, Image, Card, CardBody, CardFooter } from "@chakra-ui/react";
 
 const CharacterCard = ({ character }) => {
   return (
@@ -19,7 +19,7 @@ const CharacterCard = ({ character }) => {
         />
         <Text fontSize="xl">{character.name}</Text>
         <Text>Gender: {character.gender}</Text>
-        <Text>Height: {character.height}</Text>
+        <Text>Height: {character.height} </Text>
         <Text>Mass: {character.mass}</Text>
       </CardBody>
     </Card>
