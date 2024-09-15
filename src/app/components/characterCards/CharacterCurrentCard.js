@@ -75,7 +75,8 @@ const CharacterCurrentCard = ({ character }) => {
               height="100%"
               className="cardText"
             >
-              Gender: {character.gender}
+              Gender:{" "}
+              {character.gender[0].toUpperCase() + character.gender.slice(1)}
             </Text>
             <Divider />
           </Stack>
@@ -87,8 +88,12 @@ const CharacterCurrentCard = ({ character }) => {
               height="100%"
               className="cardText"
             >
-              Hair Color: {character.hair_color} - Eye Color:{" "}
-              {character.eye_color}
+              Hair Color:
+              {character.hair_color[0].toUpperCase() +
+                character.hair_color.slice(1)}
+              - Eye Color:
+              {character.eye_color[0].toUpperCase() +
+                character.eye_color.slice(1)}
             </Text>
             <Divider />
           </Stack>
