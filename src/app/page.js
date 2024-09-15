@@ -4,7 +4,6 @@ import SearchBar from "./components/searchBar/SearchBar";
 import CurrentCharacter from "./components/currentCharacter/CurrentCharacterContainer";
 import { ChakraProvider, Container, Heading } from "@chakra-ui/react";
 import CharacterList from "./components/characterList/CharacterList";
-import Head from "next/head";
 
 export default function Home() {
   return (
