@@ -1,33 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aplicación Buscador de Personajes de Star Wars
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Aplicación para buscar personajes de Star Wars utilizando la API de SWAPI (https://swapi.dev/) y la guía visual de StarWars (https://starwars-visualguide.com/#/). Muestra detalles de cada personaje como nombre, género y más.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Instalación
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clona este repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `npm start` para iniciar la aplicación.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Abre [http://localhost:3000] en tu navegador de preferencia para ver los resultados.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Características
 
-## Learn More
+- Búsqueda de personajes.
+- Filtros por género y clasificación.
+- Historial de busqueda con paginación.
+- Diseño atractivo con Chakra UI.
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologías utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Reac JS - https://react.dev/
+- Next.js - https://nextjs.org/
+- Chakras Ui - https://v2.chakra-ui.com/
 
 ## Deploy on Vercel
 
