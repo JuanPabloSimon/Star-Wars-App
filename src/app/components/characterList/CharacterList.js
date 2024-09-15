@@ -73,11 +73,10 @@ const CharacterList = () => {
           }
         </UnorderedList>
         <Button variant="outline" color="red" onClick={() => handleNext()}>
-          Previows
+          Previous
         </Button>
       </Stack>
     </Box>
   );
 };
-
 export default CharacterList;

@@ -10,6 +10,7 @@ const CharacterCard = ({ character }) => {
   // funcion para poder seleccionar personajes desde el historial
   const handleClick = (element) => {
     addCharacter(element);
+    window.scroll({ top: 0, behavior: "smooth" });
   };
 
   return (
