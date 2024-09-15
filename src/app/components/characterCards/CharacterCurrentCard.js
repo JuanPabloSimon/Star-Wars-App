@@ -88,10 +88,10 @@ const CharacterCurrentCard = ({ character }) => {
               height="100%"
               className="cardText"
             >
-              Hair Color:
+              Hair Color:{" "}
               {character.hair_color[0].toUpperCase() +
-                character.hair_color.slice(1)}
-              - Eye Color:
+                character.hair_color.slice(1)}{" "}
+              - Eye Color:{" "}
               {character.eye_color[0].toUpperCase() +
                 character.eye_color.slice(1)}
             </Text>
