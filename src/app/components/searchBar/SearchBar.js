@@ -42,7 +42,7 @@ const SearchBar = () => {
         variant="filled"
         mt={4}
         size="lg"
-        placeholder="Insert a character name like Luke Skywalker"
+        placeholder="Type a character's name like Luke Skywalker"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
