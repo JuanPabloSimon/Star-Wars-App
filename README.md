@@ -22,7 +22,7 @@ Abre http://localhost:3000 en tu navegador de preferencia para ver los resultado
 
 ## Tecnologías utilizadas
 
-- Reac JS - https://react.dev/
+- React JS - https://react.dev/
 - Next.js - https://nextjs.org/
 - Chakras Ui - https://v2.chakra-ui.com/
 
