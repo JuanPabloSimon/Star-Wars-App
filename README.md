@@ -15,8 +15,9 @@ Abre [http://localhost:3000] en tu navegador de preferencia para ver los resulta
 ## Características
 
 - Búsqueda de personajes.
-- Filtros por género y clasificación.
+- Filtros por género.
 - Historial de busqueda con paginación.
+- Selección de personaes desde historial.
 - Diseño atractivo con Chakra UI.
 
 ## Tecnologías utilizadas
