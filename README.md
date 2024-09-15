@@ -10,14 +10,14 @@ Aplicación para buscar personajes de Star Wars utilizando la API de SWAPI (http
 2. Ejecuta `npm install` para instalar las dependencias.
 3. Ejecuta `npm start` para iniciar la aplicación.
 
-Abre [http://localhost:3000] en tu navegador de preferencia para ver los resultados.
+Abre http://localhost:3000 en tu navegador de preferencia para ver los resultados.
 
 ## Características
 
 - Búsqueda de personajes.
-- Filtros por género.
 - Historial de busqueda con paginación.
 - Selección de personaes desde historial.
+- Filtros por género en historial.
 - Diseño atractivo con Chakra UI.
 
 ## Tecnologías utilizadas
@@ -25,6 +25,10 @@ Abre [http://localhost:3000] en tu navegador de preferencia para ver los resulta
 - Reac JS - https://react.dev/
 - Next.js - https://nextjs.org/
 - Chakras Ui - https://v2.chakra-ui.com/
+
+## Estado del Proyecto
+
+- En desarrollo
 
 ## Deploy on Vercel
 
