@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CharacterContext } from "../../context/CharacterContext";
-import CharacterCard from "../characterCards/CharacterListCard";
+import CharacterListCard from "../characterCards/CharacterListCard";
 import { Box, UnorderedList, Stack, Text, Button } from "@chakra-ui/react";
 import FilterInput from "../filterInput/FilterInput";
 import "./characterList.css";
@@ -54,10 +54,14 @@ const CharacterList = () => {
         </Button>
         <UnorderedList className="characterList" textAlign="center">
           {
-            // chequeo condicional: si la cantidad filtrada es mayor a 0 mapeamos y devolvemos el componente CharacterCard, de no serlo, mostramos un texto indicandolo
+            // chequeo condicional: si la cantidad filtrada es mayor a 0 mapeamos y devolvemos el componente CharacterListCard, de no serlo, mostramos un texto indicandolo
             filtered.length > 0 ? (
               currentCharacters.map((el, index) => (
-                <CharacterCard className="cards" key={index} character={el} />
+                <CharacterListCard
+                  className="cards"
+                  key={index}
+                  character={el}
+                />
               ))
             ) : (
               <Text

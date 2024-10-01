@@ -25,6 +25,7 @@ const CharacterCurrentCard = ({ character }) => {
       mb={4}
       color="white"
       backgroundColor="rgb(0,0,0,0.6)"
+      className="fade-in"
     >
       <CardBody display="flex" textAlign="center" fontWeight="bold">
         <Image
