@@ -11,6 +11,10 @@ const SearchBar = () => {
   // funcion llamada a la api
   const searchCharacter = async (e) => {
     e.preventDefault();
+    if (input.trim() == "") {
+      setError("You need to write a character's name");
+      return;
+    }
     setLoading(true); // mostrar algo mientras los datos son leídos
     setError(null);
     try {
