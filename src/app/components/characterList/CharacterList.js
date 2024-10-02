@@ -21,7 +21,6 @@ const CharacterList = () => {
     if (actualpage < totalPages) {
       setActualPage(actualpage + 1);
     }
-    console.log(actualpage);
   };
 
   // función para volver a la página anterior
@@ -29,7 +28,6 @@ const CharacterList = () => {
     if (actualpage > 1) {
       setActualPage(actualpage - 1);
     }
-    console.log(actualpage);
   };
 
   return (
