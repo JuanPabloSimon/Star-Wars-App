@@ -68,7 +68,7 @@ const CharacterList = () => {
                 bg="rgb(0,0,0,0.5)"
                 borderRadius={10}
                 color="red.500"
-                fontSize="3em"
+                className="h1"
                 fontWeight="bolder"
               >
                 No Characters to Display

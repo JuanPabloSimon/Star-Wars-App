@@ -34,7 +34,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form onSubmit={(e) => searchCharacter(e)} className="form">
+    <form onSubmit={(e) => searchCharacter(e)} className="form fade-in">
       <Input
         boxShadow="dark-lg"
         p="6"

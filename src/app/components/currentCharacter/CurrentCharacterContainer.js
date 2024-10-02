@@ -9,6 +9,7 @@ const CurrentCharacterContainer = () => {
 
   return (
     <Box
+      className="fade-in"
       mt={3}
       display="flex"
       flexDir="column"
@@ -22,7 +23,7 @@ const CurrentCharacterContainer = () => {
           bg="rgb(0,0,0,0.5)"
           borderRadius={10}
           color="red.500"
-          fontSize="3em"
+          className="h1"
           fontWeight="bolder"
         >
           {error}
@@ -47,7 +48,7 @@ const CurrentCharacterContainer = () => {
           bg="rgb(0,0,0,0.5)"
           borderRadius={10}
           color="red.500"
-          fontSize="3em"
+          className="h1"
           fontWeight="bolder"
         >
           {" "}
