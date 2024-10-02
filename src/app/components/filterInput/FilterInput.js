@@ -8,6 +8,8 @@ const FilterInput = () => {
   return (
     <Stack display="flex" flexDir="row" mb={5}>
       <Text
+        lineHeight="40px"
+        width="13em"
         textAlign="center"
         color="black"
         fontWeight="bold"

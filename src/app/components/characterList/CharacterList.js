@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CharacterContext } from "../../context/CharacterContext";
-import CharacterCard from "../characterCards/CharacterListCard";
+import CharacterListCard from "../characterCards/CharacterListCard";
 import { Box, UnorderedList, Stack, Text, Button } from "@chakra-ui/react";
 import FilterInput from "../filterInput/FilterInput";
 import "./characterList.css";
@@ -21,7 +21,6 @@ const CharacterList = () => {
     if (actualpage < totalPages) {
       setActualPage(actualpage + 1);
     }
-    console.log(actualpage);
   };
 
   // función para volver a la página anterior
@@ -29,7 +28,6 @@ const CharacterList = () => {
     if (actualpage > 1) {
       setActualPage(actualpage - 1);
     }
-    console.log(actualpage);
   };
 
   return (
@@ -54,17 +52,21 @@ const CharacterList = () => {
         </Button>
         <UnorderedList className="characterList" textAlign="center">
           {
-            // chequeo condicional: si la cantidad filtrada es mayor a 0 mapeamos y devolvemos el componente CharacterCard, de no serlo, mostramos un texto indicandolo
+            // chequeo condicional: si la cantidad filtrada es mayor a 0 mapeamos y devolvemos el componente CharacterListCard, de no serlo, mostramos un texto indicandolo
             filtered.length > 0 ? (
               currentCharacters.map((el, index) => (
-                <CharacterCard className="cards" key={index} character={el} />
+                <CharacterListCard
+                  className="cards"
+                  key={index}
+                  character={el}
+                />
               ))
             ) : (
               <Text
                 bg="rgb(0,0,0,0.5)"
                 borderRadius={10}
                 color="red.500"
-                fontSize="3em"
+                className="h1"
                 fontWeight="bolder"
               >
                 No Characters to Display

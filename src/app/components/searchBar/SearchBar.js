@@ -11,6 +11,10 @@ const SearchBar = () => {
   // funcion llamada a la api
   const searchCharacter = async (e) => {
     e.preventDefault();
+    if (input.trim() == "") {
+      setError("You need to write a character's name");
+      return;
+    }
     setLoading(true); // mostrar algo mientras los datos son leídos
     setError(null);
     try {
@@ -30,7 +34,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form onSubmit={(e) => searchCharacter(e)} className="form">
+    <form onSubmit={(e) => searchCharacter(e)} className="form fade-in">
       <Input
         boxShadow="dark-lg"
         p="6"
