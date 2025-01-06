@@ -19,7 +19,7 @@ const SearchBar = () => {
     setError(null);
     try {
       const response = await axios.get(
-        `https://swapi.dev/api/people/?search=${input}`
+        `https://swapi.py4e.com/api/people/?search=${input}`
       );
       const character = response.data.results[0]; // trae el primer personaje (el de mayor coincidencia)
       const planet = await axios.get(character.homeworld); // fetch a la api para recuperar el mundo del personaje
